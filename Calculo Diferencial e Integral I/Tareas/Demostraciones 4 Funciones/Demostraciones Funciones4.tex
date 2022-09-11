@@ -144,5 +144,53 @@
             $dom f(x)+f(y)= \{x \in \mathbb{R}| x \neq -1, y \neq -1, xy + x + y \neq -1\}$
 
         \end{enumerate}
+        \item Sean $f, g$ y $h$ tres funciones. Demuestre o de un contraejemplo para determinar si las siguientes
+        afirmaciones son verdaderas o falsas.
+        \begin{enumerate}
+            \item $f\circ (g+h)= f\circ g + f \circ h$
+            
+            Falsa. Contraejemplo:\\
+            $f(x) = x^2$, $g(x) = 3$, $h(x) = 2$\\
+            $f(g(x)+h(x))= (3+2)^2 = 25$\\
+            $f(g(x))+f(h(x))= 3^2 + 2^2 = 13$\\
+            $f\circ (g+h)\neq f\circ g + f \circ h$
+
+            \item $(g+h)\circ f = g\circ f + h\circ f$
+            
+            Verdadera.\\
+            $(g+h)\circ f= (g+h)\circ f(x) = g \circ f(x) + h \circ f(x)= g(f(x)) + h(f(x))$\\
+            Por definición $(a+b)\circ c(x) = a \circ c(x) + b \circ c(x)$
+
+            $g\circ f + h\circ f= g\circ f(x) + h\circ f(x)= g(f(x)) + h(f(x))$\\
+            Por definición $a\circ c(x) + b\circ c(x)= a(c(x)) + b(c(x))$
+
+            Por lo tanto $(g+h)\circ f = g\circ f + h\circ f$
+
+            \item $\frac{1}{f\circ g}=\frac{1}{f}\circ g$
+            
+            Verdadera.\\
+            $\frac{1}{f}\circ g= (\frac{1}{f}\circ g) (x) = \frac{1}{f(g)}\circ (x)$\\
+            $= \frac{1}{f(g(x))}= \frac{1}{f\circ g}$
+
+            \item $\frac{1}{f\circ g}= f\circ (\frac{1}{g})$
+            
+            Falsa. Contraejemplo:\\
+            $f(x)= 2x$, $g(x)= 5$\\
+            $\frac{1}{f(g(x))}= \frac{1}{2(5)}= \frac{1}{10}$\\
+            $f(\frac{1}{g(x)})= 2(\frac{1}{5})= \frac{2}{5}$\\ 
+            Por lo tanto $\frac{1}{f\circ g}\neq f\circ (\frac{1}{g})$
+        \end{enumerate}
     \end{enumerate}
+    7. Pruebe que, si $f$ es una función tal que \textbf{para toda función} $g$ se satisface que $(f \circ g)(x) = (g \circ f)(x)$
+    para toda $x \in \mathbb{R}$, entonces $f(x) = x$ para toda $x \in \mathbb{R}$.
+    \begin{proof}
+        \begin{center}
+            Supongamos que $c \in \mathbb{R}$. Entonces sea $g: \mathbb{R} \rightarrow \mathbb{R}$ por regla
+            de correspondencia, dada por $g(x)=c$, donde $c$ es la función constante.
+
+            $f(c)= f(g(c))=(f\circ g)(c)=(g\circ f)(c)=g(f(c))=c$
+
+            Debido a que $c$ fue arbitraria, $f(x)=x$ para todo $x\in \mathbb{R}$
+        \end{center}
+    \end{proof}
 \end{document}
