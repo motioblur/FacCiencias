@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+
+\title{Miniensayo sobre la Máquina de Turing}
+\author{Vite Riveros Carlos Emilio, Carrera: Física}
+\date{31 de agosto}
+
+\begin{document}
+    \maketitle
+
+    El concepto de la máquina de Turing es, sino el más importante, uno de los más importantes de 
+    las ciencias de la computación. Y este a su vez tiene su origen en una serie de problemas
+    planteados a inicios del siglo XX que cuestionaban en sí, la propia naturaleza de las matemáticas. 
+    
+
+    Para entender qué es una máquina de Turing y porque todos los sistemas de computo modernos, 
+    como la estructura de Von Neumann, están basados en esta, necesitaremos entender estos problemas.
+
+
+    Los problemas fueron planteados por David Hilbert, como parte de su lista de los 23 problemas más 
+    importantes de las matemáticas, escrita como una lista de retos para los matemáticos del nuevo siglo
+    y que expresó en forma de preguntas. Entre ellos vienen muchos problemas de gran relevancia pero los que 
+    tuvieron quizá el mayor impacto y los que nos interesan son los siguientes:
+
+    \begin{enumerate}
+        \centering
+        \item ¿Las matemáticas son completas?\\
+        Esto se refiere a que si es posible probar o refutar cualquier enunciado matemático partiendo de 
+        los axiomas.
+    
+        \item ¿Las matemáticas son consistentes?\\
+        Se refiere a si solo se pueden probar los problemas verdaderos, ya que un sistema donde se pueden 
+        probar enunciados falsos es un sistema inconsistente e inconfiable.
+
+        \item ¿Son todos los enunciados de las matemáticas decidibles?\\
+        Esto se refiere a que si existe un procedimiento que puede ser aplicado para cualquier enunciado que 
+        nos diría si este es verdadero o falso en tiempo finito.
+    \end{enumerate}
+    
+    Hilbert aseguraba que se encontraría la respuesta a estos problemas, y no solo eso, sino que la respuesta sería
+    que sí. Decía que no hay problemas inresolvibles en la matemática, de manera optimista.
+
+    Sin embargo, un lógico austriaco de nombre Kurt Gödel demostraría lo contario. Ya que un día antes de que hiciera 
+    esta famosa afirmación, Gödel demostró que la respuesta a la primera pregunta de Hilbert era que las matemáticas
+    no podían ser un sistema completo. Terminando así con el sueño del formalista.
+
+    La manera en la que Gödel demostró esto fue con un sistema que creo en el cual la matemática podría auto-referenciar 
+    sus propias características. En este sistema, logró llegar a un enunciado con una finalidad simple. Este en palabras
+    simples dice: 
+    \begin{center}
+
+    "Este enunciado no se puede demostrar bajo los axiomas". 
+
+    \end{center}
+    La finalidad de esto es llegar a un caso en el cual un enunciado tiene que ser verdadero, ya que si es falso, este probaría que 
+    las matemáticas son inconsistentes, lo cual significaría que no son confiables como sistema de verdades. Pero la consecuencia de esto 
+    es que obtienes un enunciado que tiene que ser verdad, pero no puedes probar. Asimismo, este enunciado en sí no puede ser tratado como 
+    un axioma más, ya que eso causaría una cadena de enunciados que tendrían que ser axiomáticos también.
+
+    Con esto, Gödel probó que las matemáticas no eran completas, y puso en duda su consistencia. Pero el último problema es el que nos lleva al 
+    origen de la computacion moderna. Para 1935, el británico Alan Turing tenía la respuesta, y una vez más era un no. Las matemáticas no eran
+    decidibles.
+
+    Para descubrir la respuesta de esta última pregunta, Turing se basó en la noción de Leibniz; en la cual una máquina lo suficientemente poderosa
+    para poder computar lo que sea podría calcular con certeza cualquier operación en tiempo finito. Esto hizo que Turing ideara una máquina teórica 
+    que cumpliera con estas propiedades, la máquina de Turing. Esta idea es el concepto fundacional del que se desprende la computación electrónica 
+    programable de la modernidad.
+
+    Una máquina de Turing, en términos simples, es una máquina que consiste en tres partes. Una cinta infinita en la que puede escribir y leer información
+    con una cabeza, que a su vez, la misma cabeza que lee y escribe información. Y una serie de reglas que le dicen a la cabeza a qué celda de la cinta debe 
+    moverse, o en su defecto si debe detenerse.
+
+    Con esta máquina puede demostrarse el razonamiento de Turing. Si se asume que existe una máquina de Turing llamada H que es capaz de determinar si cualquier
+    programación que le sea insertada terminará en un ciclo infinito o se detendrá en un tiempo finito sin falla alguna. Si uno toma H e invierte su salida, es decir, que si H 
+    da como resultado que se detiene la operación, H comienza un ciclo infinito y viceversa. Y después se le proporciona a H con el mismo programa de H con esta
+    inversión, H es incapaz de llegar a una conclusión determinada, por lo tanto su H nunca fue una máquina que acertara siempre, entonces H no existe. Con esto Alan 
+    Turing probó que no es posible demostrar que para cualquier enunciado es posible determinar su veracidad en un tiempo finito.
+
+    Pero Turing, al intentar probar que este último enunciado era falso, terminó creando las bases conceptuales de lo que sería la computación electrónica programable.
+    Y 10 años después esto sirvió para la creación de máquinas que eran capaces de descifrar el código nazi Enigma, a lo que se le atribuye el recortar
+    el tiempo que duró la guerra. Todo esto para eventualmente llegar a la creación de la primera computadora programable de uso general: ENIAC. Hasta que John Von Neumann
+    planteó la estructura en la que las computadoras actuales están realmente basadas.
+
+    Esta consiste de una unidad de procesamiento con una unidad aritmética lógica y registros de procesos, una unidad de control que incluye un registro de 
+    instrucciones y un contador de programa, memoria que pueda almacenar información e instrucciones, una memoria externa en masa y mecanismos de entrada y sálida.
+    En conclusión, los problemas de Hilbert de manera inadvertida llevaron a la humanida a la invención de una de las herramientas más poderosas de su existencia, ya que
+    las computadoras actuales no son conceptualmente diferentes de lo planteado por Von Neuman en los 40.
+
+
+
+    \textbf{Bibliografía}\\
+    Mitchell, M. (2009). Complexity a Guide Tour. New York: Oxford Univeristy Press.\\
+    Numberphile. (31 de mayo de 2017). Gödel's Incompleteness Theorem - Numberphile. Reino Unido. Obtenido de https://www.youtube.com/watch?v=O4ndIDcDSGc\\
+    Veritasium. (22 de mayo de 2021). Math's Fundamental Flaw. Estados Unidos. Obtenido de https://www.youtube.com/watch?v=HeQX2HjkcNo
+
+
+\end{document}
