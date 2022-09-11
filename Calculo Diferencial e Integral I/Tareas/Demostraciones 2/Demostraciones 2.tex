@@ -1,0 +1,96 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+
+\title{Cálculo diferencial e integral I\\Resolución de "Problemas de: números reales"}
+\author{Vite Riveros Carlos Emilio}
+\date{26 Agosto 2022}
+
+\begin{document}
+    \maketitle
+    1. Encuentre todos los números reales que satisfagan las siguientes desigualdades:
+    \begin{center}
+        (b) $5-x^2<-2$
+            
+            $-x^2<-2-5$
+
+            $-x^2<-7$
+
+            $x^2>7$
+
+            $\sqrt[]{x^2}>\sqrt[]{7}$
+
+            $|x|>\sqrt[]{7}$
+
+            $x>\sqrt[]{7}$,  $x<-\sqrt[]{7}$
+            
+        (e) $\frac{1}{x} - \frac{1}{1-x} < 0$ 
+
+            $\frac{1}{x} < \frac{1}{1-x} $
+
+            Si $x \neq 0$, $\frac{1}{x}$ está definido. Entonces:
+
+            $\frac{x}{x} < \frac{1}{1-x}$
+
+            $1 < \frac{x}{x(1-x)}$
+
+            Como $a,b \in \mathbb{R}$
+
+    \end{center}
+
+    5. Pruebe que si $a,b \in \mathbb{R}$, entonces $a^2 \leq b^2$ si y solo si $|a| \leq |b|$.
+        \begin{proof}
+            \begin{center}
+                \textbf{Demostración:}
+
+                \textit{Caso 1:}\\
+                $|a|\leq|b|$
+
+                Por definición de el valor absoluto:\\
+                $|a|=a$, $|b|=b$
+
+                $a \leq b$
+
+                $a * a \leq b * a$ 
+                
+                $a * b \leq b * b$
+
+                Por definición de la potenciación:\\
+
+                $a^2 \leq ab$
+                
+                $ab \leq b^2$
+
+                $a^2 \leq ab \leq b^2 $
+
+                Por transitividad:\\
+                $a^2 \leq b^2$
+
+                \textit{Caso 2:}\\
+                $a^2 \leq b^2$
+
+                $\sqrt[]{a^2} \leq \sqrt[]{b^2}$
+
+                $|a|\leq|b|$
+
+            \end{center}       
+        \end{proof}
+
+    6. En los siguientes incisos, escriba el mismo número quitando (al menos) un signo de valor absoluto.
+    \begin{center}
+        (b) $||\sqrt[2]{2} + \sqrt[2]{3}| - |\sqrt[2]{5} + \sqrt[2]{7}|| $
+
+        (d) $||a+b| + |c| - |a+b+c|| $
+
+    \end{center}
+
+    7. Calcule todos los números reales que satisfacen las siguientes condiciones:
+    \begin{center}
+        (c) $|x-1||x+1| < 2$
+
+        (f) $|x-1||x+2| = 3$
+    \end{center}
+\end{document}

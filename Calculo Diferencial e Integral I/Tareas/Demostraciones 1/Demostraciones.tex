@@ -1,0 +1,228 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+
+\title{Cálculo diferencial e integral I\\Resolución de 'Problemas de: números reales'}
+\author{Vite Riveros Carlos Emilio}
+\date{20 Agosto 2022}
+
+\begin{document}
+\maketitle
+
+3. Pruebe que si $a,b \in \mathbb{R}$, entonces $-(a-b) = b-a$.
+    \begin{proof}
+        \begin{center}
+            \textbf{Demostración:}
+
+            $(b-a)+(a-b)=(b-a)+(a-b)$
+
+            Ley asociativa de la adición (P1):\\
+            $(b-a)+(a-b)=b+(-a+a)+(-b)$
+
+            Ley del inverso aditivo (P3):\\
+            $(b-a)+(a-b)=b+0+(-b)$
+
+            Ley del neutro aditivo (P2):\\
+            $(b-a)+(a-b)=b+(-b)$
+
+            P3:\\
+            $(b-a)+(a-b)=0$
+
+            P2:\\
+            $(b-a)+(a-b)+(-(a-b))=0+(-(a-b))$
+
+            P3:\\
+            $(b-a)+(0)=-(a-b)$
+
+            P2:\\
+            $(b-a)=-(a-b)$
+
+        \end{center}
+    \end{proof}
+        
+5. Pruebe que si $a,b \in \mathbb{R}$ son tales que $a^2 = b^2$, entonces $a = b$ o $a = -b$.
+    \begin{proof}
+        \begin{center}
+            \textbf{Demostración:}
+
+            $a^2=b^2$
+
+            $a^2+(ab)=b^2+(ab)$
+
+            Por definición:\\
+            $(a*a)+(ab)=(b*b)+(ab)$
+
+            Por ley distributiva del producto (P9):\\
+            $a(a+b)=b(b+a)$
+
+            Por ley de conmutación aditiva (P4):\\
+            $a(a+b)=b(a+b)$
+
+            Por ley del inverso del producto (P7):\\
+            $a(a+b)*(a+b)^-1=b(a+b)*(a+b)^-1$
+
+            $a*1=b*1$
+
+            Por ley del neutro del producto (P6):\\ 
+            $a=b$
+
+        \end{center}
+    \end{proof}
+
+7. Determine si las siguientes afírmaciones son falsas o verdaderas. Pruebe su respuesta.
+
+(a) Si $a,b \in \mathbb{R}$, entonces $a < a + b$.
+    \begin{proof}
+        \begin{center}
+            \textit{Falso}\\
+            \textbf{Demostración:}
+    
+            $a = 5$ 
+            $b = 0$
+    
+            Sustitución de términos:\\
+            $5 < 5 + 0$
+    
+            (P2):\\
+            $5 < 5$
+    
+        \end{center}
+    \end{proof}
+(b) Si $a,b \in \mathbb{R}$, entonces $a < a + b$ o $b < a + b$.
+    \begin{proof}
+        \begin{center}
+            \textit{Verdadero}\\
+            \textbf{Demostración:}
+           
+        \end{center}
+    \end{proof}
+(c) Si $a,b,c,d \in \mathbb{R}$, son tales que $a + c < b + d$, entonces $a < b$ y $c < d$.
+    \begin{proof}
+        \begin{center}
+            \textit{Falso}\\
+            \textbf{Demostración:}
+
+            $a = 2$ $b = 1$ $c = 5$ $d = 7$
+    
+            Sustitución de términos:\\
+            $a + c < b + d$\\
+            $2+5<1+7$\\
+            $7<8$
+
+            $a<b$  $2<1$\\
+            y\\
+            $c<d$  $5<7$
+    
+        \end{center}
+    \end{proof}
+(d) Si $a,b,c,d \in \mathbb{R}$, son tales que $ac < bd$, entonces $a < b$ y $c < d$.
+    \begin{proof}
+        \begin{center}
+            \textit{Falso}\\
+            \textbf{Demostración:}
+
+            $a = 8$ $b = 1$ $c = 0$ $d = 3$
+
+            Sustitución de términos:\\
+            $ac < bd$\\
+            $8*0<1*3$\\
+            $0<3$
+
+            $a<b$  $8<1$\\
+            y\\
+            $c<d$  $0<3$
+
+        \end{center}
+    \end{proof}
+(e) Si $a,b \in \mathbb{R}$, son tales que $ab = a$, entonces $b = 1$.
+    \begin{proof}
+        \begin{center}
+            \textit{Falso}\\
+            \textbf{Demostración:}
+
+            $a = 0$ $b = 9$
+
+            Sustitución de términos:\\
+            $ab = a$
+
+            $(0)(9)=0$
+
+            \begin{proof}
+                \begin{center}
+                    Proposición: Si $a \in \mathbb{R}$, $a*0=0$:\\
+                \textbf{Demostración:}
+
+                    $a*0=b$\\
+                    $b=a*0$\\
+
+                    (P1):\\
+                    $b=a*(a-a)$
+
+                    (P9):\\
+                    $b=(a*a)-(a*a)$\\
+
+                    (P1):\\
+                    $b=0$\\
+                \end{center}
+            \end{proof}
+            
+            $a*0=0$
+
+            $0 = 0$
+
+            $b \neq 1$
+
+        \end{center}
+    \end{proof}
+(f) Si $a,b \in \mathbb{R}$, son tales que $a^2 \leq b^2$, entonces $a \leq b$.
+    \begin{proof}
+        \begin{center}
+            \textit{Falso}\\
+            \textbf{Demostración:}
+
+            $a = 2$ $b = -3$
+
+            Sustitución de términos:\\
+            $a^2 \leq b^2$
+
+            $4<9$
+
+            $a<b$  
+            
+            $2<-3$
+
+        \end{center}
+    \end{proof}
+9. Pruebe que si $a,b \in \mathbb{R}$, entonces $2ab \leq a^2 + b^2$.
+    \begin{proof}
+        \begin{center}
+            \textbf{Demostración:}
+
+            $(a-2)^2\geq0$
+
+            Por definición de la potenciación:\\
+            $(a-2)^2=(a-2)(a-2)$
+
+            (P9):\\
+            $(a-2)(a-2)=a(a-b)-b(a-b)$
+
+            $a*a-b*b-b*a+(-b)*(-b)$
+
+            $a*a=a^2$ $b*b=b^2$ $-ab+(-ab)=2ab$
+
+            ${(a-b)}^2=a^2-2ab+b^2$
+
+            $a^2-2ab+b^2\geq0$
+
+            (P1):\\
+
+            $(a^2+b^2)-2ab\geq0$
+
+            $a^2+b^2\geq2ab$
+
+        \end{center}
+    \end{proof}
+\end{document}
