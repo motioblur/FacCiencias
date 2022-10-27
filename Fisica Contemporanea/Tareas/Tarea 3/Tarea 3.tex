@@ -8,6 +8,7 @@
 \usepackage{siunitx}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepgfplotslibrary{polar}
 \usepackage{graphicx}
 \graphicspath{ {./} }
 \usetikzlibrary{arrows.meta}
@@ -28,6 +29,49 @@
         Arquímedes. También haz el diagrama de cuerpo libre del péndulo doble
         (¡sin susto!).
 
+        \begin{center}
+            \begin{tikzpicture}[scale=.6]
+                \draw[thick] (0,0) -- (3,0);
+                \draw[thick] (.9,0) -- (.9,2);
+                \draw[thick] (1.1,0) -- (1.1,2);
+                \draw[thick] (.9,2) -- (1.1,2);
+                \filldraw[thick, red] (1.1,.5) -- (2.4,.5) -- (1.1,1.9) -- cycle;
+                \draw[thick] (0,0) -- (0,-1.5);
+                \draw[thick] (0,-1.5) -- (1.5,-1.5);
+                \draw[thick] (1.5,-1.5) arc (270:360:1.5);
+                \draw[thick, blue] (-1.6,-1.2) arc (180:90:.5);
+                \draw[thick, blue] (-1.1,-.7) arc (180:270:.5);
+                \draw[thick, blue] (-.6,-1.2) arc (180:90:.5);
+                \draw[thick, blue] (-.1,-.7) arc (180:270:.5);
+                \draw[thick, blue] (.4,-1.2) arc (180:90:.5);
+                \draw[thick, blue] (.9,-.7) arc (180:270:.5);
+                \draw[thick, blue] (1.4,-1.2) arc (180:90:.5);
+                \draw[thick, blue] (1.9,-.7) arc (180:270:.5);
+                \draw[thick, blue] (2.4,-1.2) arc (180:90:.5);
+                \draw[thick, blue] (2.9,-.7) arc (180:270:.5);
+                \draw[thick, blue] (3.4,-1.2) arc (180:90:.5);
+                \draw[thick, blue] (3.9,-.7) arc (180:270:.5);
+                \draw[thick, dotted] (1.5,-2.5) -- (1.5,2.5) node[anchor=west]{$y$};
+                \draw[thick, dotted] (-1.5,0) -- (4.5,0) node[anchor=north]{$x$};
+                \draw[thick, ->] (1.5,0) -- (1.5,2) node[anchor=west]{$\vec{N}$};
+                \draw[thick, ->] (1.5,0) -- (1.5,-2) node[anchor=west]{$\vec{W}$};
+            \end{tikzpicture}
+
+            Si un buque está "flotando" sobre el mar, es porque se encuentra en equilibrio, es
+            decir, hay una fuerza actuando sobre él, que contrarresta su propio peso.
+
+            Si definimos la presión como la fuerza que se distribuye sobre una superficie, es decir
+            $p=\frac{F}{A}$, notemos que, la presión en un punto dentro de un fluído equivale  a la 
+            densidad de este multiplicada por su profundidad y la gravedad (si la densidad del fluído es 
+            relativamente constante). Esto es porque la fuerza que se experimenta a dicha profundidad
+            equivale al peso del fluído que hay por encima, es decir:
+            
+            $F=m_F\si{g}=p_F V\si{g}=p_F Ah\si{g}$
+
+            Por lo que la presión es: $p=\frac{F}{A}=\frac{p_F Ah\si{g}}{A}=p_F h\si{g}$
+
+        \end{center}
+
         \item Demuestra que la fuerza gravitacional “de prepa”, $\vec{f}=m\vec{g}$ y la 
         fuerza de gravitacional Universal, $\vec{F}=mG\frac{M}{r^2}\hat{r}$, son la misma. 
         Evalúa para el caso de la Tierra (busca los valores de $M_{\text{Tierra}}$ y $R_{\text{Tierra}}$).
@@ -40,7 +84,7 @@
              $(R_\oplus+h)^2\approx R_\oplus^2$.
 
             $F = G\frac{M_\oplus}{R_\oplus^2}m$\\
-            $F = (6.67408\times 10^{-11})\frac{5.9722\times 10^{24}}{6371000^2}m$\\
+            $F = m\frac{(6.67408\times 10^{-11})(5.9722\times 10^{24})}{6371000^2}$\\
             $F = m(9.8199...)$, $\si{g}\approx9.81\frac{\si{m}}{\si{s^2}}$\\
             $F = mg$
 
@@ -49,10 +93,31 @@
         \item Suponiendo que la Luna gira alrededor de la Tierra con un periodo de 27
         días, a una distancia de $3.8 \times 10^8 \si{m}$, calcular la masa de la Tierra.
 
+        \begin{center}
+            $T=27\si{\text{ días}}(\frac{24\si{h}}{1\si{\text{ día}}})(\frac{60\si{\text{ min}}}{1\si{h}})(\frac{60\si{\text{s}}}{1\si{\text{ min}}})= 2.333 \times 10^6 \si{s}$\\
+            $M_\oplus=\frac{4\pi^2r^3}{GT^2}=\frac{4\pi^2(3.8\times 10^8)^3}{6.67\times 10^{-11}(2.333\times 10^6)}$\\
+            $M_\oplus=5.967\times 10^{24} \si{kg}$
+        \end{center}
+
         \item Considera un satélite terrestre que describe una órbita cuyo radio es $1.5$
         veces el radio de la Tierra. Considerando órbita circular, 1. Calcula su
         período, 2. si se quiere que esté geoestacionario (busca éste término), calcula
         la altura a la que debe estar sobre la superficie de la Tierra.
+
+        \begin{center}
+                1. Se tiene que $a=1.5(R_0)$ donde $R_0=\text{radio de la tierra}=6.38\times 10^6 \si{m}$\\
+                $a=9.57\times 10^6\si{m}$\\
+                $M=5.98\times 10^{24}\si{kg}$, $\si{G}=6.67\times 10^{-4} \frac{\si{N}\si{m}^2}{\si{kg}^2}$\\
+                $T=2\pi\sqrt[]{\frac{a^3}{\si{G}M}}$
+
+                $T\approx \text{2 h, 34 min, 48 seg}$
+
+                2. $T=24\si{h}$\\
+                $a\approx 4.23\times 10^7 \si{m}$\\
+                $a=R_0 + h$, $h= a-R_0$
+
+                $h=3.59\times 10^7 \si{m}$
+        \end{center}
         
         \item Identifique qué tipo de cónica representa la ecuación polar:
         \begin{center}
@@ -60,9 +125,43 @@
         \end{center}
         Haga una gráfica de esta curva en papel polar, o con Mathematica.
 
+        \begin{center}
+            $r=\sqrt[]{x^2+y^2}$, $x=y\cos\theta$, $y=r\sin\theta$\\
+            $r=\frac{3}{4-\cos\theta}$, $r(4-\cos\theta)=3$, $4r-r\cos\theta=3$\\
+            $4\sqrt[]{x^2+y^2}=3+x$\\
+            $16(x^2+y^2)=9+6x+x^2$\\
+            $15x^2+16y^2+6x-9=0$\\
+
+            La cónica es una elipse.
+
+            $\frac{(x-\frac{1}{5})^2}{\frac{16}{25}}+\frac{y^2}{\frac{3}{5}}=1$
+
+            \begin{tikzpicture}[scale=.6]
+                \begin{polaraxis}
+                    \addplot[domain=0:360] {3/(4-cos(x))};
+                \end{polaraxis}
+            \end{tikzpicture}
+        \end{center}
+
         \item La distancia media de Marte al sol es $1.52$ veces la de la Tierra al sol.
         A partir de esto, calcule el número de años necesarios para que Marte
         complete una revolución en torno al Sol.
+
+        \begin{center}
+            $\frac{T^2}{a^2}=\frac{4\pi^2}{GM}$
+
+            Para la tierra: $\frac{T_\oplus^2}{a_\oplus^2}= \frac{4\pi^2}{GM_\odot}$
+
+            Para marte: $\frac{T_\ominus^2}{a_\ominus^2}= \frac{4\pi^2}{GM_\odot}$
+
+            $\frac{T_\oplus^2}{a_\oplus^2}=\frac{T_\ominus^2}{a_\ominus^3}$\\
+            $T_\ominus=T_\oplus^2(\frac{1.52a_\oplus}{a_\oplus})=3.51T_\oplus^2$
+
+            $T_\oplus=1\si{\text{ año}}$
+
+            $T_\ominus=1.87\si{\text{ años}}$
+
+        \end{center}
 
         \item Considere una distribución esférica uniforme de estrellas en una galaxia
         de masa total $M$ y radio $R_0$. Cierta estrella de masa $M_e$ a una distancia

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1666839321 "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 3/Tarea 3.tex" "Tarea 3.pdf" "Tarea 3" 1666839322
+["pdflatex"] 1666849706 "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 3/Tarea 3.tex" "Tarea 3.pdf" "Tarea 3" 1666849708
   "C:/Users/motio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1664256917 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/motio/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1664064835 10785261 94fcd46171d0caa51542fdcec7bb60cd ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -108,6 +108,7 @@
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex" 1621075461 22701 5fab7b8ebb90b053dc067d1bd37e43c2 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex" 1621075461 3047 aa82404aec57311271f4991c44bd71dc ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex" 1621075461 2931 5d52092da9e839accd7c9026062fe5c3 ""
+  "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar.code.tex" 1621075461 25707 3454b163bb9a67897293a218eaa2e3f7 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex" 1621075461 23537 54be8160344d894595f6d145b1311658 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex" 1621075461 4288 b8d6247899b21e3bb66bb11b24d30f2c ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex" 1621075461 13828 11d1b09335a4a8baa693dd1e6cac3edf ""
@@ -181,9 +182,9 @@
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644052122 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644052122 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Tarea 3.aux" 1666839322 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "Tarea 3.tex" 1666839320 5736 4956a85ca8f69357db9704e6b76278e6 ""
-  "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 3/Tarea 3.tex" 1666839320 5736 4956a85ca8f69357db9704e6b76278e6 ""
+  "Tarea 3.aux" 1666849708 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "Tarea 3.tex" 1666849706 10446 f051469f36acc60dde61b55c22824331 ""
+  "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 3/Tarea 3.tex" 1666849706 10446 f051469f36acc60dde61b55c22824331 ""
   (generated)
   "Tarea 3.aux"
   "Tarea 3.log"
