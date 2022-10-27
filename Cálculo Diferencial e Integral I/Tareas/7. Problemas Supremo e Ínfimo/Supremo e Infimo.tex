@@ -1,0 +1,51 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+
+\title{Cálculo diferencial e integral I\\Resolución de Problemas de Supremo e Ínfimo}
+\author{Vite Riveros Carlos Emilio}
+\date{20 octubre del 2022}
+
+
+\begin{document}
+    \maketitle
+    \begin{enumerate}
+        \item Sea $S \subseteq \mathbb{R}$ un conjunto no vacío. Demostrar que $u \in \mathbb{R}$ es una cota superior de $S$ si y sólo si las
+        condiciones: $t \in \mathbb{R}$ y $t > u$, implican que $t \notin S$.
+
+        \begin{proof}
+            Primero demostraremos que $t \notin S$. Sabemos que $t > u$ y que por hipótesis $u$ es cota superior de $S$.
+            Por definición de cota superior, sabemos que $\forall x \in S$, $x \leq u$, y como $u<t$, tenemos entonces:
+            \begin{center}
+                $\forall x \in S$, $x\leq u < t$
+
+                $\forall x \in S$, $x < t$
+            \end{center}
+
+            Por lo que concluimos que $t$  es una cota superior y que $t \notin S$ al ser estrictamente mayor que cualesquiera elemento de $S$.
+
+            Ahora demostraremos que $u$ es cota superior de $S$, sabiendo que $t>u$. Por hipótesis, sabemos que $t \notin S$.
+
+
+        \end{proof}
+
+        \item Sea $S$ un subconjunto no vacío de $\mathbb{R}$ que está acotado inferiormente. Demostrar que el conjunto
+        $-S = \{-s | s \in S\}$ está acotado superiormente y que:
+        \begin{center}
+            $\inf(S)=-\sup(-S)$
+        \end{center}
+
+        \item (6.)  Sean $S$ y $S_0$ subconjuntos no vacíos de $\mathbb{R}$ tales que $S_0 \subseteq S \subseteq \mathbb{R}$ y $S$ acotado superior e inferiormente.
+        Demostrar que:
+
+        \begin{center}
+            $\inf(S)\leq\inf(S_0)\leq\sup(S_0)\leq\sup(S)$
+        \end{center}
+
+        \item (8.) Si $S = \{\frac{1}{n}-\frac{1}{m}|:n,m \in \mathbb{N}\}$, demuestre que $S$ está acotado superior e inferiormente y encuentre $\inf(S)$
+        y $\sup(S)$. Pruebe su respuesta.
+    \end{enumerate}
+\end{document}
