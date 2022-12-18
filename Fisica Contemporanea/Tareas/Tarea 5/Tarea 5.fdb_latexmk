@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670958193 "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 3/Tarea 3.tex" "Tarea 3.pdf" "Tarea 3" 1670958195
+["pdflatex"] 1669266826 "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 5/Tarea 5.tex" "Tarea 5.pdf" "Tarea 5" 1669266827
   "C:/Users/motio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1668550410 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/motio/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1668550238 10788374 7a4ff9e45e848cd8e98e45255762c2c2 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -31,7 +31,6 @@
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247593067 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "C:/Users/motio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247593066 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247593066 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -182,10 +181,10 @@
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/motio/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Tarea 3.aux" 1670958195 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "Tarea 3.tex" 1666846106 10446 f051469f36acc60dde61b55c22824331 ""
-  "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 3/Tarea 3.tex" 1666846106 10446 f051469f36acc60dde61b55c22824331 ""
+  "Tarea 5.aux" 1669266827 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "Tarea 5.tex" 1669266825 3266 40c7734df48cb5afeab579e1f90fa178 ""
+  "h:/My Drive/Trabajos/1er Semestre/Fisica Contemporanea/Tareas/Tarea 5/Tarea 5.tex" 1669266825 3266 40c7734df48cb5afeab579e1f90fa178 ""
   (generated)
-  "Tarea 3.aux"
-  "Tarea 3.log"
-  "Tarea 3.pdf"
+  "Tarea 5.aux"
+  "Tarea 5.log"
+  "Tarea 5.pdf"

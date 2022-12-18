@@ -1,0 +1,72 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{angles,quotes}
+\pgfplotsset{compat = newest}
+
+\title{Física Contemporánea\\Resolución de Tarea 5}
+\author{Vite Riveros Carlos Emilio}
+\date{21 de noviembre del 2022}
+
+\begin{document}
+    \maketitle
+
+    \begin{enumerate}
+        \item Dos cargas puntuales $+Q$ y $-Q$ separadas una distancia $d$ (dipolo eléctrico)
+        están en el eje $x$, en $x = \frac{d}{2}$ y $x=-\frac{d}{2}$ respectivamente. Encuentra 
+        la fuerza neta sobre una tercera carga $+q$, también en el eje $x$ en $x <\frac{d}{2}$.
+        Simplifica el resultado y obtén la forma de la fuerza neta aproximada para $x >> d$.
+
+        \begin{center}
+            $\vec{F_e}=q(\Sigma(\vec{E}))$\\
+            $r_1 = |x-\frac{d}{2}|$, $r_2 = |x+\frac{d}{2}|$\\
+            $\vec{F_e}=q(\frac{k(+Q)}{r_1^2}\vec{r}+\frac{k(-Q)}{r_2^2}\vec{r})$\\
+            $\vec{F_e}=q(\frac{k(+Q)}{|x-\frac{d}{2}|^2}\vec{r}+\frac{k(-Q)}{|x+\frac{d}{2}|^2}\vec{r})$\\
+            $\vec{F_e}=kq(\frac{+Q}{(x-\frac{d}{2})^2}\vec{r}+\frac{-Q}{(x+\frac{d}{2})^2}\vec{r})$\\
+            $\vec{F_e}=kq(\frac{+Q}{(x-\frac{d}{2})^2}+\frac{-Q}{(x+\frac{d}{2})^2})(1, 0)$
+
+            $r_1 = \lim_{x\to d}|x-\frac{d}{2}|=|d-\frac{d}{2}|=\frac{d}{2}$\\
+            $r_2 = \lim_{x\to d}|x+\frac{d}{2}|=|d+\frac{d}{2}|=\frac{3d}{2}$\\
+            $\vec{F_e}=kq(\frac{+Q}{(\frac{d}{2})^2}+\frac{-Q}{(\frac{3d}{2})^2})(1, 0)$\\
+            $\vec{F_e}=kq(\frac{+Q}{\frac{d^2}{4}}+\frac{-Q}{\frac{9d^2}{4}})(1, 0)$\\
+            $\vec{F_e}=kq(\frac{4+Q}{d^2}+\frac{4-Q}{9d^2})(1, 0)$\\
+            $\vec{F_e}=\frac{4kq}{d^2}(+Q+\frac{-Q}{9})(1, 0)$\\
+
+        \end{center}
+
+        \item Una barra delgada de longitud $L$ se coloca sobre el eje $x$. Una carga puntual
+        $q$ se coloca sobre el mismo eje $x$ a una distancia $d$ de uno de los extremos de
+        la barra. La barra tiene una distribución uniforme de carga, de $n$ Coulombs
+        por metro. Calcula la fuerza eléctrica que actúa sobre la carga $q$.
+        Sugerencia. Suma las contribuciones a la fuerza debidas a diferenciales de
+        carga de la barra para obtener la fuerza total.
+
+        \begin{center}
+            $\lambda=\frac{Q_{\text{total}}}{L}$\\
+            $dq = \lambda dL$\\
+            $d\vec{E}=k\frac{dq}{x^2}$\\
+            $d\vec{F_e}=q_a(d\vec{E})$\\
+            $\int d\vec{F_e}=\int q_a(d\vec{E})$\\
+            $\vec{F_e}= q_a\int{d\vec{E}}$\\
+            $\vec{F_e}=q_a\int_{d}^{d+L}k\frac{dq}{x^2}$\\
+            $\vec{F_e}=kq_a\int_{d}^{d+L}\frac{\lambda dx}{x^2}$\\
+            $\vec{F_e}=\lambda kq_a\int_{d}^{d+L}{x^{-2}dx}$\\
+            $\vec{F_e}=-\frac{\lambda kq_a}{x}_d^{d+L}$\\
+            $\vec{F_e}=-[\frac{\lambda kq}{d+L}-\frac{\lambda kq}{d}]$\\
+            $\vec{F_e}=\frac{\lambda kq}{d}-\frac{\lambda kq}{d+L}(1,0)$
+
+        \end{center}
+
+    \end{enumerate}
+\end{document}
